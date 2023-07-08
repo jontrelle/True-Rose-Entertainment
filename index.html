@@ -1,0 +1,147 @@
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="veiwport" content="width=devics-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        
+        <title>True Rose ENT</title>
+    </head>
+    <body>
+        <!-- Header start -->
+        <header>
+            <nav>
+                <div class="TRE">
+            
+                    <a  class="logo-container" href="#tre">
+                        <img class="logo" src="True Rose Entertainment (2).png" alt="TRE LOGO">
+                    </a>
+                
+                </div>
+
+                <input type="checkbox" id="check">
+
+                <label for="check" class="hamburger-btn">
+                    <span class="material-symbols-outlined">
+                       discover_tune
+                    </span>
+                </label>
+            
+                <ul class="menu">
+            
+                   <li><a class="active" href="#artist">Artist</a></li>
+                   <li><a class="active" href="#music">Music</a></li>
+                   <li><a class="active" href="#media">Media</a></li>
+                   <li><a class="active" href="#dates">Dates</a></li>
+                   <li><a class="active" href="#shop">Shop</a></li>
+                   <li><a class="active" href="#contact">Contact</a></li>
+            
+                </ul>
+            </nav>
+            
+        </header>
+        <!-- Header end -->
+
+        <!-- Slideshow start -->
+        <div class="carousel" data-flickity='{"autoPlay": true }' id="slideshow">
+            <div class="carousel-cell" style="background-image: url(img_5700.jpg)"></div>
+            <div class="carousel-cell" style="background-image: url(IMG_5701.JPG)"></div>
+            <div class="carousel-cell" style="background-image: url(img_5702.jpg)"></div>
+            <div class="carousel-cell" style="background-image: url(img_5703.jpg)"></div>
+            <div class="carousel-cell" style="background-image: url(img_5705.jpg)"></div>
+            <div class="carousel-cell" style="background-image: url(img_6603.jpg)"></div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        
+        <!-- End Slideshow -->
+
+        <!-- Start mission section -->
+        <section>
+        <div class="box" id="mission">
+            <div class="left"></div>
+            <div class="right">
+                <div class="content">
+                    <h1>The Mission</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repellendus a accusantium quaerat quasi illum earum sint, corporis quidem ullam asperiores amet hic laboriosam ipsum obcaecati veniam, est voluptas quos.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- End mission section  -->
+
+        <!-- Start bar Section -->
+        <hr class="rounded">
+        <!-- End bar Section -->
+
+        <!-- Start Artist Section -->
+    
+        <section id="artist">
+            
+            <h2>Artist</h2>
+            
+            <a href="https://www.instagram.com/___shalon/" target="_blank">
+                <img src="Screen Shot 2023-06-09 at 5.40.39 PM.jpg" id="shalon">
+            </a> 
+            <p class="sha" id="names">Shalon</p>
+            <a href="https://www.instagram.com/_chuckdiamond_" target="_blank">
+                <img src="Screen Shot 2023-06-09 at 5.42.40 PM.jpg" id="chuck">
+            </a>
+            <p class="chuck" id="names">Chuck Diamond</p>
+        </section>
+
+        <!-- End Artist Section -->
+        
+        <!-- End music Section -->
+        
+        <h2 class="title">Listen Here</h2>
+        
+        <div id="music">
+            <div class="music-container" id="music-container"> 
+                <div class="music-info">
+                    
+                    <h4 id="title">Can't Stop by Shalon</h4>
+                    
+                    <div class="progress-container" id="progress-container">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                </div>    
+                
+                <audio src="Can't Stop.mp3" id="cant_stop"></audio>
+                    
+                <div class="image-container">
+                    <img src="IMG_2089.jpg" alt="music-cover" id="cover"/>
+                </div>
+
+                <div class="navigation">
+                    <button id="prev" class="action-btn">
+                        <i class="fas fa-backward"></i>
+                    </button>
+                    <button id="play" class="action-btn action-btn-big">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button id="next" class="action-btn">
+                        <i class="fas fa-forward"></i>
+                    </button>
+                </div>
+                
+
+            </div>
+            
+            <script src="script.js"></script>
+        </div>
+
+        <!-- End music Section -->
+
+        <!-- Start bar Section -->
+        <hr class="rounded2">
+        <!-- End bar Section -->
+
+    </body>
+</html>

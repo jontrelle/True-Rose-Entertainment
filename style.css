@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Londrina+Solid&family=Open+Sans:wght@300&family=Space+Mono&family=Titillium+Web:wght@300&display=swap');
+
+/* Start of header code*/
+
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+   background-color: rgb(0, 0, 0);
+   color: white;
+   Font-family: Carter One;
+   background-image: url('img_0732.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+
+
+}
+
+nav img {
+    padding: 0px;
+    width: 100px;
+    margin: 0px;
+}
+
+nav {
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.TRE {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 0;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: #8b939e;
+    float: right;
+    text-align: center;
+    transition: all .5s;
+}
+
+.menu li {
+    opacity: 0;
+    line-height: 30px;
+    margin: 50px 0;
+    font-size: 20px;
+}
+
+.menu li a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-transform: uppercase;
+    
+    
+} 
+
+.menu li a.active, .menu li a:hover {
+    color: #b61d1d;
+    transition: 0.5s;
+    
+    
+}
+
+.hamburger-btn {
+    display: block;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    line-height: 75px;
+    margin-right: 40px;
+    cursor: pointer;
+    padding-top: 30px;
+    
+}
+
+
+#check {
+    display: none; 
+}
+
+#check:checked ~ .menu {
+    height: 100vh;
+}
+
+#check:checked ~ .menu li {
+    opacity: 1;
+}
+
+.bgimg {
+    padding-top: 100%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+    .logo-container {
+        margin-left: 25px;
+    }
+
+    nav {
+        height: 100px;
+        background-color: transparent;
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        float: right;
+        text-align: right;
+        margin-right: 25px;
+        transition: none;
+    }
+
+    .menu li {
+        display: inline-block;
+        opacity: 1;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .menu li a.active, .menu li a:hover {
+        color: #ffffff;
+    }
+
+}
+
+/* End of header code*/
+
+/* Start Slideshow */
+*{
+    box-sizing: border-box;
+}
+
+.carousel-cell{
+    width: 66%;
+    height: 500px;
+    margin-right: 10px;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-cell:before{
+    display: block;
+    content: '';
+    
+}
+
+/* End Slideshow */
+
+/* Start mission section */
+
+section{
+    min-height: 80vh;
+    height: 800px;
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#5e1d23;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: rgba(0, 0, 0, 0.3)  0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+    
+}
+
+.box{
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    
+
+}
+.left{
+    width: 68%;
+    height: 500px;
+    background-image:url(True\ Rose\ Entertainment\ \(1\).png);
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    
+    
+}
+.right {
+    width: 60%;
+    min-height: 200px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    margin-left: 0;
+    margin-right: 10px;
+    
+    
+
+}
+.right h1 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right p{ 
+    margin: 20px 0;
+    font-weight: 500px;
+    line-height: 25px;
+
+}
+
+
+ 
+@media only screen and (max-width: 768px){
+    .section{
+        margin: 0%;
+        padding: 0%;
+        height: fit-content; 
+        flex-direction: column;
+        display: flex;
+    }
+
+    .box{
+        flex-direction: column; 
+        padding: 0%;
+        margin: 0%;
+        margin-left: 10px;
+        width: 100%;
+        display: flex;
+
+        
+    }
+
+    .left{
+        width: 100%;
+        margin: 0;
+        margin-top: 250px;
+        margin-left: 0px;
+        padding: 19.4%;
+        border-radius: 25px;
+    }
+    .right{
+        width: 40%;
+        margin: 0px;
+        height: 75%;
+        margin-top: 50px;
+        margin-left: -780px;
+    }
+
+}
+/* End mission section */
+
+/* Start bar section */
+
+hr.rounded {
+    border-top: 20px solid rgb(95, 18, 18);
+    border-radius: 30px;
+    margin: 100px;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.3)  0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+/* End bar section */
+
+/* Start Artist section */
+
+img { 
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-flex;
+}
+.artist{
+    display: inline-block;
+}
+
+#shalon {
+    width: 425px;
+    height: 500px;
+    border-radius: 10px;
+    border: 5px solid black;
+    position: relative;
+    left: 40px;
+    
+
+}
+
+#chuck {
+    width: 425px;
+    height: 500px;
+    border-radius: 10px;
+    border: 5px solid black;
+    position: relative;
+    left: 100px;
+    
+}
+
+h2{
+    position: relative;
+    bottom: 320px;
+    left: 590px;
+    font-size: 70px;
+    font: large;
+    color:rgb(0, 0, 0);
+    -webkit-text-fill-color: rgb(170, 165, 165);
+    -webkit-text-stroke-width: 1px;
+}
+
+#names {
+    font-size: 40px;
+    font: large;
+    z-index: 3;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 2px;
+
+}
+
+.sha {
+    position: relative;
+    bottom: -300px;
+    right: 230px;
+    color:rgb(0, 0, 0);
+    -webkit-text-fill-color: seagreen;
+}
+
+.chuck {
+    position: relative;
+    bottom: -320px;
+    right: 150;
+    color:rgb(0, 0, 0);
+    -webkit-text-fill-color: rgb(43, 66, 196);
+}
+/* End Artist section*/                                                                                                                                  
+/* Start music section */
+
+.title {
+    position: relative;
+    top: 0px;
+    left: 650px;
+    color: black;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+}
+
+#title {
+    color:rgb(0, 0, 0);
+}
+
+#music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  
+    
+}
+
+.music-container {
+    background-color:rgb(255, 0, 0);
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.6);
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    margin: 100px 0;
+    z-index: 10;
+
+}
+
+.music-container {
+    position: relative;
+    width: 110px;
+}
+
+.image-container img {
+    width: inherit;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* End music section */
+
+
+
+/* Start bar section */
+
+hr.rounded2 {
+    border-top: 20px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    margin: 100px;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.3)  0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+/* End bar section */                                                             
